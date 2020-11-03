@@ -1,0 +1,233 @@
+body{
+    background-color:rgb(73, 73, 73);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+	color: white;
+	margin-top: 60px;
+}
+h5{
+    color: white;
+}
+.anjay{
+    display: inline-block;
+    margin-left: 5px;
+    width:715px;
+    height: auto;
+	border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+	background-color: #333;
+	vertical-align: top;
+	position: relative;
+}
+a{
+    color: white;
+}
+.z{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+.zz{
+    color: white;
+    text-align: left;
+    font-size: 15px;
+}
+.title {
+	font-weight: bold;
+	font-size: 24px;
+	position: absolute;
+	top: 5px;
+}
+
+.container {
+	display: inline-block;
+	width:330px;
+	margin: 5px;
+	min-height: 330px;
+	border-radius: 10px;
+	padding: 20px;
+	background-color: #333;
+	vertical-align: top;
+	position: relative;
+}
+.sightings {
+	margin: 10px 5px;
+	border-radius: 10px;
+	padding: 20px;
+	background-color: #333;
+	vertical-align: top;
+	position: relative;
+	width:702px;
+	position: relative;
+}
+
+.submit {
+    margin-top: 5px;
+    background: #222;
+    display: inline-block;
+    padding: 1px 10px 6px;
+    color: #ddd;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 24px;
+    border-radius: 5px;
+    border: none;
+    text-shadow: 0 -1px 1px #222;
+    position: relative;
+    cursor: pointer;
+    height: 30px;
+    width: 175px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.submit[disabled] {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.submit:enabled:hover {
+	color: #fff;
+}
+.submit:enabled:active {
+	line-height: 26px;
+	text-indent: 2px;
+}
+
+.message {
+	display: inline-block;
+	color: #BFB;
+}
+
+.link {
+	color: #CEF;
+}
+
+span.link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.namelabel, .label {
+	display: inline-block;
+	text-align: left;
+	color: #CEF;
+}
+
+.result {
+	margin-top: 10px;
+}
+.location {
+	width: 160px;
+}
+.label {
+	width: 180px;
+}
+.npcName, .namelabel {
+	width: 105px;
+}
+
+
+.map {position: absolute;
+	display: none;
+	top: 15px;
+    left: 368px;
+    border-radius: 15px;
+	background-image: url('../map.png');
+	background-size: 100%;
+	/*transition: opacity  0s linear 0.1s;*/
+	height: 418px;
+	width: 347px;
+	margin-left: 20px;
+	z-index: 9999;
+}
+
+#walking .map {
+	left: -390px;
+}
+
+.label:hover {
+	background-color: #666;
+	cursor: pointer;
+}
+
+.label:hover .map, .label:focus .map {
+	display: block;
+}
+
+.map .marker {
+	position: absolute;
+	height: 5px;
+	width: 5px;
+	background: red;
+	
+}
+
+.map .markerpath {
+	position: absolute;
+	height: 2px;
+	width: 2px;
+	background: red;
+	border-radius: 1px;
+}
+
+.map .walkingNpc {
+	position: absolute;
+	height: 5px;
+	width: 5px;
+	top: 10px;
+	left: 10px;
+	background: yellow;
+	border-radius: 2px;
+}
+
+#walking .marker {
+	margin-left: -25px;
+	margin-top: -25px;
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+	opacity: 0.3;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgba(139, 139, 139, 0.527);
+	-webkit-backdrop-filter: blur(3px);
+	backdrop-filter: blur(3px);
+	border-radius: 10px;
+	position: fixed;
+	top: 0;
+	width: 765px;
+  }
+  
+  li {
+	float: left;
+  }
+  
+  li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration:none;
+  }
+  
+  li a:hover:not(.active) {
+	background-color:rgba(255, 152, 250, 0.651);
+	-webkit-backdrop-filter: blur(3px);
+	backdrop-filter: blur(3px);
+	border-radius: 10px;
+  }
+  
+  .active {
+	background-color: rgba(255, 94, 247, 0.651);
+	-webkit-backdrop-filter: blur(3px);
+	backdrop-filter: blur(3px);
+	border-radius: 10px;
+  }

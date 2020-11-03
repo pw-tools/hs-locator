@@ -1,0 +1,77 @@
+#navlist {
+padding: 0;
+margin: 0;
+list-style-type: none;
+background-color: #333;
+color: #FFF;
+width: 100%;
+font: normal 90% arial, helvetica, sans-serif;
+text-align: left;
+line-height: 25px;
+position: relative;
+text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+     -1px  1px 0 #000,
+      1px  1px 0 #000;
+display: flex;
+}
+
+
+#navlist .links, .name { 
+display: inline-block;
+padding: 0px;
+position: relative;
+}
+
+#navlist .link {
+	display: inline-block;
+}
+
+#navlist .name {
+margin-right: 10px;
+/*width: 200px;
+background: url('../images/sig.png') left center no-repeat;
+background-size: 80%;*/
+color: #fdca55;
+padding-left: 10px;
+flex: none;
+}
+
+#navlist .name a{
+	text-decoration: none;
+	color: #fdca55;
+	display: block;
+	height: 25px;
+}
+
+body {
+color: #FFF;
+background: black;
+font-family: Arial,Tahoma,Helvetica,sans-serif;
+margin: 0px;
+}
+
+.footer {
+	margin-top: 20px;
+	font-size: 85%;
+	color: #CCC;
+	width: 600px;
+}
+a {
+	color: #CCF;
+}
+
+
+#hLang{
+    float:right;
+    text-align:right;
+    font-size: 14px;
+    padding:5px 5px 0px 0px;
+}
+#hLang span {
+    display: inline-block;
+    margin:2px;
+    width:24px;
+    height:18px;
+}
